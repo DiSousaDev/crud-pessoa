@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes } from "@angular/router";
+import { PessoaService } from "./services/pessoa.service";
 
-const routes: Routes = [];
+
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule
+  ],
+  providers: [
+    PessoaService
   ]
 })
-export class AppRoutingModule {
-}
+export class PessoaModule { }
