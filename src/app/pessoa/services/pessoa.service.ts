@@ -46,5 +46,4 @@ export class PessoaService {
     localStorage[LS_CHAVE] = JSON.stringify(pessoas);
   }
 
-
 }
