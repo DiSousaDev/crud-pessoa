@@ -9,6 +9,7 @@ import { InserirEnderecoComponent } from "./endereco/inserir-endereco/inserir-en
 import { EditarEnderecoComponent } from "./endereco/editar-endereco/editar-endereco.component";
 import { ListarCidadeComponent } from "./cidade/listar-cidade/listar-cidade.component";
 import { InserirCidadeComponent } from "./cidade/inserir-cidade/inserir-cidade.component";
+import { EditarCidadeComponent } from "./cidade/editar-cidade/editar-cidade.component";
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'cidades/novo',
     component: InserirCidadeComponent
+  },
+  {
+    path: 'cidades/editar/:id',
+    component: EditarCidadeComponent
   }
 ];
 
