@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import { Endereco } from "../../shared/models/endereco.model";
 
 
-const LS_CHAVE: string = "pessoas";
+const LS_CHAVE: string = "enderecos";
 
 @Injectable({
   providedIn: 'root'
