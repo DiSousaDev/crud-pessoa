@@ -4,11 +4,13 @@ import { CidadeService } from "./services/cidade.service";
 import { ListarCidadeComponent } from './listar-cidade/listar-cidade.component';
 import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
+import { InserirCidadeComponent } from './inserir-cidade/inserir-cidade.component';
 
 
 @NgModule({
   declarations: [
-    ListarCidadeComponent
+    ListarCidadeComponent,
+    InserirCidadeComponent
   ],
   imports: [
     CommonModule,
