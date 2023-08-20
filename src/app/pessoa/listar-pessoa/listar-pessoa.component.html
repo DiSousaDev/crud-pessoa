@@ -6,7 +6,7 @@
     <th>Idade</th>
     <th class="text-center">
       <a [routerLink]="['/pessoas/novo']"
-        href="#" title="Novo"
+         href="#" title="Novo"
          class="btn btn-xs btn-success">
         <i class="fa fa-plus" aria-hidden="true"></i> Novo
       </a>
@@ -17,7 +17,11 @@
     <td style="width: 300px">
       <div class="d-flex justify-content-center gap-2">
         <div class="btn-editar">
-          <a href="#" title="Editar" class="btn btn-xs btn-info">
+          <a [routerLink]="['/pessoas/editar', pessoa.id]"
+             href="#"
+             title="Editar"
+             class="btn btn-xs btn-info"
+          >
             <i class="fa fa-edit" aria-hidden="true"></i> Editar
           </a>
         </div>
