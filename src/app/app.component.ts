@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Cadastro de pessoas';
   titleEndereco = 'Cadastro de Endereços'
+  titleCidade = 'Cadastro de Cidades'
 }
