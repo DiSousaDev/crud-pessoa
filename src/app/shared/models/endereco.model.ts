@@ -1,5 +1,4 @@
 export class Endereco {
-
   constructor(
     public id?: string,
     public rua?: string,
@@ -11,5 +10,4 @@ export class Endereco {
     public estado?: string
   ) {
   }
-
 }

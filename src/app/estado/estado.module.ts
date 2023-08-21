@@ -1,13 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EstadoService } from "./services/estado.service";
+import { ListarEstadoComponent } from './listar-estado/listar-estado.component';
+import { InserirEstadoComponent } from './inserir-estado/inserir-estado.component';
+import { EditarEstadoComponent } from './editar-estado/editar-estado.component';
+import { RouterModule } from "@angular/router";
+import { FormsModule } from "@angular/forms";
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ListarEstadoComponent,
+    InserirEstadoComponent,
+    EditarEstadoComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    FormsModule
   ],
   providers: [
     EstadoService
