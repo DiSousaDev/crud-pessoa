@@ -6,14 +6,16 @@ import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 import { InserirPessoaComponent } from './inserir-pessoa/inserir-pessoa.component';
 import { EditarPessoaComponent } from './editar-pessoa/editar-pessoa.component';
-
-
+import { NumericoDirective } from "../shared/directives/numerico.directive";
+import { ValidaIdadeMininaDirective } from "../shared/directives/valida-idade-minina.directive";
 
 @NgModule({
   declarations: [
     ListarPessoaComponent,
     InserirPessoaComponent,
-    EditarPessoaComponent
+    EditarPessoaComponent,
+    NumericoDirective,
+    ValidaIdadeMininaDirective
   ],
   imports: [
     CommonModule,
@@ -24,4 +26,5 @@ import { EditarPessoaComponent } from './editar-pessoa/editar-pessoa.component';
     PessoaService
   ]
 })
-export class PessoaModule { }
+export class PessoaModule {
+}

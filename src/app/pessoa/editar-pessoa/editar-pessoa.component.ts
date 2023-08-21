@@ -41,4 +41,5 @@ export class EditarPessoaComponent implements OnInit {
     }
   }
 
+  protected readonly NgForm = NgForm;
 }
