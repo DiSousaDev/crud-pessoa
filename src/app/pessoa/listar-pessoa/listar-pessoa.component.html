@@ -13,9 +13,9 @@
       </a>
     </th>
   <tr *ngFor="let pessoa of pessoas">
-    <td> {{pessoa.nome}} </td>
+    <td> {{pessoa.nome | uppercase }} </td>
     <td> {{pessoa.idade}} </td>
-    <td> {{pessoa.dataNascimento}} </td>
+    <td> {{pessoa.dataNascimento! | mask: 'd0/M0/0000'}} </td>
     <td style="width: 240px">
       <div class="d-flex justify-content-center gap-2">
         <div class="btn-editar">

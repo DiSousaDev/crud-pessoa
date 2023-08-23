@@ -8,6 +8,10 @@ import { InserirPessoaComponent } from './inserir-pessoa/inserir-pessoa.componen
 import { EditarPessoaComponent } from './editar-pessoa/editar-pessoa.component';
 import { NumericoDirective } from "../shared/directives/numerico.directive";
 import { ValidaIdadeMininaDirective } from "../shared/directives/valida-idade-minina.directive";
+import { IConfig, NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask } from "ngx-mask";
+import { UppercasePipe } from "../shared/pipes/uppercase.pipe";
+
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
 @NgModule({
   declarations: [
@@ -15,15 +19,19 @@ import { ValidaIdadeMininaDirective } from "../shared/directives/valida-idade-mi
     InserirPessoaComponent,
     EditarPessoaComponent,
     NumericoDirective,
-    ValidaIdadeMininaDirective
+    ValidaIdadeMininaDirective,
+    UppercasePipe
   ],
   imports: [
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    NgxMaskDirective,
+    NgxMaskPipe
   ],
   providers: [
-    PessoaService
+    PessoaService,
+    provideEnvironmentNgxMask(options)
   ]
 })
 export class PessoaModule {
