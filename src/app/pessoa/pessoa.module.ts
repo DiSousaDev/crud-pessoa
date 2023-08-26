@@ -6,10 +6,8 @@ import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 import { InserirPessoaComponent } from './inserir-pessoa/inserir-pessoa.component';
 import { EditarPessoaComponent } from './editar-pessoa/editar-pessoa.component';
-import { NumericoDirective } from "../shared/directives/numerico.directive";
-import { ValidaIdadeMininaDirective } from "../shared/directives/valida-idade-minina.directive";
 import { IConfig, NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask } from "ngx-mask";
-import { UppercasePipe } from "../shared/pipes/uppercase.pipe";
+import { SharedModule } from "../shared";
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
@@ -17,17 +15,15 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
   declarations: [
     ListarPessoaComponent,
     InserirPessoaComponent,
-    EditarPessoaComponent,
-    NumericoDirective,
-    ValidaIdadeMininaDirective,
-    UppercasePipe
+    EditarPessoaComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     FormsModule,
     NgxMaskDirective,
-    NgxMaskPipe
+    NgxMaskPipe,
+    SharedModule
   ],
   providers: [
     PessoaService,

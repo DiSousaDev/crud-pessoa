@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Estado } from "../../shared/models/estado.model";
+import { Estado } from "src/app/shared";
 import { EstadoService } from "../services/estado.service";
 
 @Component({
