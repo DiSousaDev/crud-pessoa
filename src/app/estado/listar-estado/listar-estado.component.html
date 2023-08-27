@@ -14,8 +14,14 @@
   <tr *ngFor="let estado of estados">
     <td> {{estado.nome}} </td>
     <td> {{estado.sigla}} </td>
-    <td style="width: 240px">
+    <td style="width: 300px">
       <div class="d-flex justify-content-center gap-2">
+        <div class="btn-detalhes">
+          <button type="button" class="btn btn-xs btn-info"
+                  (click)="abrirModal(estado)" >
+            <i class="fa fa-eye" aria-hidden="true"></i> Ver
+          </button>
+        </div>
         <div class="btn-editar">
           <a [routerLink]="['/estados/editar', estado.id]"
              href="#"

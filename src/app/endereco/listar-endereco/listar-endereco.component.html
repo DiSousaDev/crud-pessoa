@@ -24,8 +24,14 @@
     <td> {{endereco.cep}} </td>
     <td> {{endereco.cidade}} </td>
     <td> {{endereco.estado}} </td>
-    <td style="width: 240px">
+    <td style="width: 300px">
       <div class="d-flex justify-content-center gap-2">
+        <div class="btn-detalhes">
+          <button type="button" class="btn btn-xs btn-info"
+                  (click)="abrirModal(endereco)" >
+            <i class="fa fa-eye" aria-hidden="true"></i> Ver
+          </button>
+        </div>
         <div class="btn-editar">
           <a [routerLink]="['/enderecos/editar', endereco.id]"
              href="#"
