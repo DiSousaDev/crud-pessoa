@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Cadastro de pessoas';
-  titleEndereco = 'Cadastro de Endereços'
-  titleCidade = 'Cadastro de Cidades'
-  titleEstado = 'Cadastro de Estados'
+  titlePessoa = 'Pessoas';
+  titleEndereco = 'Endereços'
+  titleCidade = 'Cidades'
+  titleEstado = 'Estados'
+  titleCadastros = 'Cadastros'
 }

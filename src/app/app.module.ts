@@ -8,6 +8,7 @@ import { EnderecoModule } from "./endereco/endereco.module";
 import { CidadeModule } from "./cidade/cidade.module";
 import { EstadoModule } from "./estado/estado.module";
 import { SharedModule } from "./shared";
+import { NgbDropdown, NgbDropdownItem, NgbDropdownMenu, NgbDropdownToggle } from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,11 @@ import { SharedModule } from "./shared";
     EnderecoModule,
     CidadeModule,
     EstadoModule,
-    SharedModule
+    SharedModule,
+    NgbDropdown,
+    NgbDropdownToggle,
+    NgbDropdownMenu,
+    NgbDropdownItem
   ],
   providers: [],
   bootstrap: [AppComponent]

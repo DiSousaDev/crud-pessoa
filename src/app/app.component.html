@@ -1,13 +1,41 @@
-<div>
+<div class="main-navbar">
+  <nav class="navbar navbar-expand n navbar-dark bg-dark p-2">
+    <a class="navbar-brand nav-link" href="#" [routerLink]="['/pessoas']">
+      <i class="fa fa-user-edit"></i>
+    </a>
+    <div class="navbar-collapse collapsed" id="navbarContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" [routerLink]="['/pessoas']">{{titlePessoa}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" [routerLink]="['/enderecos/listar']">{{titleEndereco}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" [routerLink]="['/cidades/listar']">{{titleCidade}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" [routerLink]="['/estados/listar']">{{titleEstado}}</a>
+        </li>
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown1"
+             role="button"> {{titleCadastros}} </a>
+          <div ngbDropdownMenu aria-labelledby="navbarDropdown1"
+               class="dropdown-menu">
+            <a ngbDropdownItem href="#" [routerLink]="['/pessoas']"
+               (click)="$event.preventDefault()">{{titlePessoa}}</a>
+            <a ngbDropdownItem href="#" [routerLink]="['/enderecos/listar']"
+               (click)="$event.preventDefault()">{{titleEndereco}}</a>
+            <a ngbDropdownItem href="#" [routerLink]="['/cidades/listar']"
+               (click)="$event.preventDefault()">{{titleCidade}}</a>
+            <a ngbDropdownItem href="#" [routerLink]="['/estados/listar']"
+               (click)="$event.preventDefault()">{{titleEstado}}</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="container-fluid">
-    <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">{{title}}</a>
-        <a [routerLink]="['/enderecos/listar']" class="navbar-brand" href="#">{{titleEndereco}}</a>
-        <a [routerLink]="['/cidades/listar']" class="navbar-brand" href="#">{{titleCidade}}</a>
-        <a [routerLink]="['/estados/listar']" class="navbar-brand" href="#">{{titleEstado}}</a>
-      </div>
-    </nav>
     <router-outlet></router-outlet>
   </div>
 </div>
