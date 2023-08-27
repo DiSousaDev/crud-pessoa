@@ -35,7 +35,7 @@ export class NumericoDirective implements ControlValueAccessor {
   }
 
   writeValue(value: any): void {
-    this.el.nativeElement.value = value;
+    this.el.nativeElement.value = value ? value : '';
   }
 
 }

@@ -26,6 +26,7 @@
              [(ngModel)]="estado.sigla"
              #sigla="ngModel"
              minlength="2"
+             maxlength="2"
              required
       >
       <div *ngIf="sigla.errors && (sigla.dirty || sigla.touched)" class="alert alert-danger">

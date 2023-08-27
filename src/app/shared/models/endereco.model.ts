@@ -2,7 +2,7 @@ export class Endereco {
   constructor(
     public id?: string,
     public rua?: string,
-    public numero?: number,
+    public numero?: string,
     public complemento?: string,
     public bairro?: string,
     public cep?: string,

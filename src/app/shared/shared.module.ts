@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { NumericoDirective, ValidaIdadeMininaDirective } from "./directives";
 import { UppercasePipe } from "./pipes";
+import { NgxMaskDirective, NgxMaskPipe } from "ngx-mask";
 
 
 
@@ -10,9 +11,15 @@ import { UppercasePipe } from "./pipes";
     ValidaIdadeMininaDirective,
     UppercasePipe
   ],
+  imports: [
+    NgxMaskDirective,
+    NgxMaskPipe,
+  ],
   exports: [
     NumericoDirective,
     ValidaIdadeMininaDirective,
+    NgxMaskDirective,
+    NgxMaskPipe,
     UppercasePipe
   ]
 })

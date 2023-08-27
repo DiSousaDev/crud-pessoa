@@ -27,6 +27,7 @@
                  name="numero"
                  [(ngModel)]="endereco.numero"
                  #numero="ngModel"
+                 numerico
                  required
           >
           <div *ngIf="numero.errors && (numero.dirty || numero.touched)" class="alert alert-danger">
@@ -73,13 +74,14 @@
                  id="cep"
                  name="cep"
                  [(ngModel)]="endereco.cep"
+                 mask="00.000-000"
                  #cep="ngModel"
-                 minlength="9"
+                 minlength="8"
                  required
           >
           <div *ngIf="cep.errors && (cep.dirty || cep.touched)" class="alert alert-danger">
             <div [hidden]="!cep.errors['required']"> Informe o CEP, campo obrigatório.</div>
-            <div [hidden]="!cep.errors['minlength']">O CEP deve estar no formato 00000-000.</div>
+            <div [hidden]="!cep.errors['minlength']">O CEP deve estar no formato 00.000-000</div>
           </div>
         </div>
       </div>
