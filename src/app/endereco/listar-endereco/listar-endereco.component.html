@@ -9,6 +9,7 @@
     <th>CEP</th>
     <th>Cidade</th>
     <th>Estado</th>
+    <th>Tipo</th>
     <th class="text-center">
       <a [routerLink]="['/enderecos/novo']"
          href="#" title="Novo"
@@ -24,6 +25,7 @@
     <td> {{endereco.cep}} </td>
     <td> {{endereco.cidade}} </td>
     <td> {{endereco.estado}} </td>
+    <td> {{endereco.residencial! ? "Residencial" : "Comercial"}} </td>
     <td style="width: 300px">
       <div class="d-flex justify-content-center gap-2">
         <div class="btn-detalhes">

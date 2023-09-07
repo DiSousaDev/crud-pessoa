@@ -9,6 +9,7 @@ import { CidadeModule } from "./cidade/cidade.module";
 import { EstadoModule } from "./estado/estado.module";
 import { SharedModule } from "./shared";
 import { NgbDropdown, NgbDropdownItem, NgbDropdownMenu, NgbDropdownToggle } from "@ng-bootstrap/ng-bootstrap";
+import { NgSelectModule } from "@ng-select/ng-select";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgbDropdown, NgbDropdownItem, NgbDropdownMenu, NgbDropdownToggle } from
     NgbDropdown,
     NgbDropdownToggle,
     NgbDropdownMenu,
-    NgbDropdownItem
+    NgbDropdownItem,
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

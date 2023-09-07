@@ -3,7 +3,9 @@ export class Pessoa {
     public id?: string,
     public nome?: string,
     public idade?: number,
-    public dataNascimento?: string
+    public dataNascimento?: string,
+    public motorista?: string,
+    public fumante?: boolean
   ) {
   }
 }

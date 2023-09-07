@@ -13,7 +13,7 @@
     </th>
   <tr *ngFor="let cidade of cidades">
     <td> {{cidade.nome}} </td>
-    <td> {{cidade.estado}} </td>
+    <td> {{cidade?.estado?.sigla}} </td>
     <td style="width: 300px">
       <div class="d-flex justify-content-center gap-2">
         <div class="btn-detalhes">

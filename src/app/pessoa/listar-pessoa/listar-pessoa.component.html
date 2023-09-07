@@ -5,6 +5,8 @@
     <th>Nome</th>
     <th>Idade</th>
     <th>Data de Nascimento</th>
+    <th>CNH</th>
+    <th>Fumante</th>
     <th class="text-center">
       <a [routerLink]="['/pessoas/novo']"
          href="#" title="Novo"
@@ -16,6 +18,8 @@
     <td> {{pessoa.nome | uppercase }} </td>
     <td> {{pessoa.idade}} </td>
     <td> {{pessoa.dataNascimento! | mask: 'd0/M0/0000'}} </td>
+    <td> {{pessoa.motorista! ? pessoa.motorista : 'Não'}} </td>
+    <td> {{pessoa.fumante! ? "Sim" : "Não"}} </td>
     <td style="width: 300px">
       <div class="d-flex justify-content-center gap-2">
         <div class="btn-detalhes">

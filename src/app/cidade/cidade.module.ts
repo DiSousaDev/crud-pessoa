@@ -9,6 +9,7 @@ import { EditarCidadeComponent } from './editar-cidade/editar-cidade.component';
 import { ModalCidadeComponent } from './modal-cidade/modal-cidade.component';
 import { ModalEstadoComponent } from '../estado/modal-estado/modal-estado.component';
 import { NgxMaskPipe } from "ngx-mask";
+import { NgSelectModule } from "@ng-select/ng-select";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NgxMaskPipe } from "ngx-mask";
     CommonModule,
     RouterModule,
     FormsModule,
-    NgxMaskPipe
+    NgxMaskPipe,
+    NgSelectModule
   ],
   providers: [
     CidadeService
